@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a sneedy place</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <!-- Embedding stuff -->
+    <meta property="og:title" content="a sneedy place" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://a.sneedy.place" />
+    <meta property="og:image" content="https://a.sneedy.place/a-sneedy-place.png" />
+    <meta property="og:description" content="a sneedy place" />
+    <meta name="theme-color" content="#DDCC66">
+
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+  <body>
+    <picture>
+        <img src="./sneeds.png" width="200px" height="auto" style="cursor:pointer;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;" onclick="sneed()">
+    </picture>
+    <audio controls preload="auto" src="./sneed.opus" hidden></audio>
+
+
+    <script>
+      /* Genius at work */
+       function sneed() {
+        const chuck = document.createElement("audio");
+        chuck.src = "./sneed.opus";
+        document.body.appendChild(chuck);
+        chuck.play();
+       }
+  </script>
+  </body>
+</html>
